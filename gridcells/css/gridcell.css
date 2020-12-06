@@ -1,0 +1,30 @@
+body {
+  background-image: url(../img/cat.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+.grid {
+  display: flex;                       /* establish flex container */
+  flex-wrap: wrap;                     /* enable flex items to wrap */
+  justify-content: space-around;
+
+  
+}
+.cell {
+  flex: 0 0 32%;                       /* don't grow, don't shrink, width */
+  height: 400px;
+  margin-bottom: 5px;
+  background-color: blue;
+  border-radius: 100%; 
+  margin: 0.5em;
+
+}
+.cell:nth-child(3n) {
+
+}
+
+.cell:hover {
+
+  opacity: 0;
+}
